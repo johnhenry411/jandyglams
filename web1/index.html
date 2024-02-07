@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>jandyglams</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('arrow').addEventListener('click', function () {
+    var sideMenu = document.getElementById('side-menu');
+    sideMenu.classList.toggle('active');
+})
+function performSearch() {
+            var searchTerm = document.getElementById('searchInput').value;
+            
+            // Check if the search term is not empty
+            if (searchTerm.trim() !== '') {
+                // Construct the URL for the search results page
+                var searchResultsURL = 'images/results.html?query=' + encodeURIComponent(searchTerm);
+                
+                // Redirect to the search results page
+                window.location.href = searchResultsURL;
+            } else {
+                alert('Please enter a search term.');
+            }
+        }
+       });
+    </script>
+</head>
+<body>
+   <section class="top-nav">
+    <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-menu-app-fill" viewBox="0 0 16 16" id="arrow">
+            <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+          </svg>             
+    </div>
+        <div class="sidebar" ><ul id='side-menu'>
+            <li>offers</li>
+            <li>clothing</li>
+            <li>cutlery</li>
+            <li>electronics</li>
+            <li>footwear</li>
+            <li>bedding</li>
+            <div class="offer">
+                <p class="offer-page">featured products</p>
+                <div class="featured-products">
+                    
+                <img src="images/bed.jpg" alt="offer" class="offers">
+                <div class="t1">matresses</div>
+                <img src="images/bed.jpg" alt="offer" class="offers1">
+                <div class="t2">Duvets</div>
+                <img src="images/bed.jpg" alt="offer" class="offers2">
+                <div class="t3">pillows</div>
+                <img src="images/bed.jpg" alt="offer" class="offers3">
+                <div class="t4">carpets</div>
+            </div>
+            </div>
+            <div class="mo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                  </svg>
+
+                <p class="more">View More</p>
+            </div>
+            <div class="mini-footer">
+                <p class="mini">contact | Order | shop <br>location | Products | services <br><i>@2024glamluxe</i></p>
+            </div>
+        </ul>
+        </div>
+   <div class="brand">
+    jandy glams
+   </div>
+    <div class="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+          </svg>
+    </div>
+    <div class="user">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>
+    </div>
+   </section> 
+   <section class="search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="search" onclick="performSearch()">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+    <input type="text" name="search" placeholder="search" class="search-bar" id="searchInput">
+   </section>
+   <div class="mainpage">
+    Your <span>bedding solution <br>Provider</span> 
+   </div>
+   <button>View Products</button>
+    <div class="footer">
+        <p class="mini">contact | Order | shop <br>location | Products | services <br><i>@2024glamluxe</i></p>
+    </div>
+   
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+     document.getElementById('side-menu').addEventListener('click', function () {
+ var sideMenu = document.getElementById('arrow');
+ sideMenu.classList.toggle('active');
+})
+function performSearch() {
+            var searchTerm = document.getElementById('searchInput').value;
+            
+            // Check if the search term is not empty
+            if (searchTerm.trim() !== '') {
+                // Construct the URL for the search results page
+                var searchResultsURL = 'images/results.html?query=' + encodeURIComponent(searchTerm);
+                
+                // Redirect to the search results page
+                window.location.href = searchResultsURL;
+            } else {
+                alert('Please enter a search term.');
+            }
+        }
+    });
+ </script>
+</html>

@@ -1,0 +1,216 @@
+body{
+    overflow-y: hidden;
+    background-image: url(images/bed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: black;
+}
+.top-nav{
+    background-color:transparent;
+    position:relative;
+    display:flex;
+    width: 100%;
+    height: 8vh;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+#side-menu{
+    width: 200px; 
+    height: 100vh;
+    color: white;
+   background-color: brown;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    transition: left 0.5s ease-out; 
+    z-index: 1;
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+li{
+    /* border-bottom: 5px solid white; */
+    width: 30px;
+    color: black;
+    margin-left: -30px;
+}
+#side-menu.active{
+    left: 0;
+}
+.menu{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    z-index: 2;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+.brand{
+  margin-top: 6px; 
+  font-size: 30px;
+  position: absolute;
+  left: 25%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: transparent;
+}
+.cart{
+    margin-top: 10px;
+    position: absolute;
+   left: 75%;
+}
+.user{
+    margin-top: 10px;
+    position: absolute;
+   left: 90%;
+}
+.search-bar{
+    width: 80%;
+   margin-left: 10%;
+   margin-top: 10px;
+   }
+   .bi-search{
+    position: absolute;
+    left: 82%;
+    top: 9.7%;
+   }
+   .mainpage{
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 25%;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   span{
+    color: brown;
+   }
+   .offers{
+    width: 70px;
+    height: 120px;
+    margin: 5px;
+    position: absolute;
+    left:4%;
+    top: 38%;
+   }
+   .offer-page{
+    color: white;
+    margin-left: -20px;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid black;
+   }
+   .featured-products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+   }
+   .offers1{
+    width: 70px;
+    height: 120px;
+    margin: 5px;
+    position: absolute;
+    left:50%;
+    top: 38%;
+   }
+   .offers2{
+    width: 70px;
+    height: 120px;
+    margin: 5px;
+    position: absolute;
+    left:50%;
+    top: 58%;
+   }
+   .offers3{
+    width: 70px;
+    height: 120px;
+    margin: 5px;
+    position: absolute;
+    left:4%;
+    top: 58%;
+   }
+   .t2{
+    position: absolute;
+    top: 53%;
+    left: 52%;
+   }
+   .t1{
+    position: absolute;
+    top: 53%;
+    left: 4%;
+   }
+   .t3{
+    position: absolute;
+    top: 72%;
+    left: 4%;
+   }
+   .t4{
+        position: absolute;
+        top: 72%;
+        left: 52%;
+    }
+    .bi-arrow-right-square-fill{
+        position: absolute;
+        top: 78%;
+        left: 8%;
+     }
+    .more{
+        width: auto;
+        position: absolute;
+        top: 78%;
+        left: 25%;
+     }
+     .mini-footer{
+        background-color: black;
+        width: 100%;
+        height: 20vh;
+        z-index: 2;
+        position: absolute;
+        top: 84%;
+        left: 0;
+     }
+     .mini{
+        text-align: center;
+     }
+     i{
+        color: brown;
+     }
+     button{
+        position: absolute;
+        top: 40%;
+        left: 32%;
+        width: 140px;
+        height: 60px;
+        background-color: brown;
+        border-radius: 30px !important;
+        font-size: 15px;
+        border: none;
+        color: white;
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif;
+     }
+     button:active{
+        background-color: transparent;
+        color: black;
+     }
+     .footer{
+        background-color: black;
+        width: 100%;
+        height: 10vh;
+        z-index: 2;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        z-index: 0;
+     }
